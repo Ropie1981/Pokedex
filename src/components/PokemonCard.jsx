@@ -1,8 +1,8 @@
 function PokemonCard () {
-    const pokemon = pokemonList[0].imgSrc;
-    const pokemonName = pokemonList[0].name;
+    const pokemon = pokemonList[1].imgSrc;
+    const pokemonName = pokemonList[1].name;
     return <figure>
-        <div>{pokemon === undefined ? <p>???</p> : <div><img src={pokemon} alt={pokemonName}/><figcaption>{pokemonName}</figcaption></div>}</div></figure>
+        <div>{pokemon === undefined ? <div><p>???</p><figcaption>{pokemonName}</figcaption></div> : <div><img src={pokemon} alt={pokemonName}/><figcaption>{pokemonName}</figcaption></div>}</div></figure>
 }
 
 export default PokemonCard;
