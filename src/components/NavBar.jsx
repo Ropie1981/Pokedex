@@ -1,5 +1,22 @@
-import PropTypes from "prop-types";
 
+  const NavBar = ({pokemonList, setPokemonIndex}) => {
+    return (
+      <div>
+        {pokemonList.map((pokemon, index) => (
+          <button key={pokemon.name} onClick={() => setPokemonIndex(index)}>
+            {pokemon.name}
+          </button>
+        ))}
+      </div>
+    );
+  };
+  
+  
+
+export default NavBar;
+
+
+/*
 const NavBar = ({ handlePrevious, handleNext, isPreviousDisabled, isNextDisabled }) => {
   return (
     <div>
@@ -15,5 +32,4 @@ NavBar.propTypes = {
   isPreviousDisabled: PropTypes.bool.isRequired,
   isNextDisabled: PropTypes.bool.isRequired,
 };
-
-export default NavBar;
+*/
