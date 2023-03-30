@@ -6,7 +6,7 @@ const PokemonCard = ({ pokemon }) => {
       {pokemon.imgSrc ? (
         <img src={pokemon.imgSrc} alt={pokemon.name} />
       ) : (
-        <p>???</p>
+        <h1>?No image?</h1>
       )}
       <figcaption>{pokemon.name}</figcaption>
     </figure>

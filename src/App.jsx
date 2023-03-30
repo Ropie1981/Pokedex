@@ -38,6 +38,7 @@ function App() {
     setPokemonIndex(pokemonIndex + 1);
   };
   return (
+    
     <div className="App">
       <PokemonCard pokemon={pokemonList[pokemonIndex]} />
        
@@ -48,6 +49,7 @@ function App() {
         isNextDisabled={pokemonIndex === pokemonList.length - 1}
         />
     </div>
+  
   );
 }
 
