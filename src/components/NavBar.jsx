@@ -10,6 +10,9 @@ const NavBar = ({ pokemonList, setPokemonIndex }) => {
   );
 };
 
+export default NavBar;
+
+/*
 NavBar.propTypes = {
   handlePrevious: PropTypes.func.isRequired,
   handleNext: PropTypes.func.isRequired,
@@ -17,9 +20,7 @@ NavBar.propTypes = {
   isNextDisabled: PropTypes.bool.isRequired,
 };
 
-export default NavBar;
 
-/*
 const NavBar = ({ handlePrevious, handleNext, isPreviousDisabled, isNextDisabled }) => {
   return (
     <div>

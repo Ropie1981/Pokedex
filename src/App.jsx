@@ -42,6 +42,10 @@ function App() {
 export default App;
 
 /*
+  useEffect(() => {
+    alert("Hello pokemon trainer :)");
+  });
+
     handlePrevious={handlePrevious}
         handleNext={handleNext}
         isPreviousDisabled={pokemonIndex === 0}
