@@ -17,7 +17,7 @@ function App() {
   );
 }
 
-PokemonCard.propTypes = {
+PokemonList.propTypes = {
   name: PropTypes.string.isRequired,
   imgSrc: PropTypes.string,
 };
