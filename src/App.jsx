@@ -17,5 +17,10 @@ function App() {
   );
 }
 
+PokemonList.propTypes = {
+  name: PropTypes.string.isRequired,
+  imgSrc: PropTypes.string,
+};
+
 export default App;
 
